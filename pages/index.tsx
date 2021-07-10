@@ -9,7 +9,6 @@ import { Button, IconButton, Snackbar } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import ReactAudioPlayer from "react-audio-player";
 import AudioPlayer from "react-h5-audio-player";
-import { API_KEY } from "../key/apikey";
 
 export default function Home() {
   const [isRecording, setIsRecording] = useState(false);
@@ -72,7 +71,8 @@ export default function Home() {
           headers: {
             "content-type":
               "multipart/form-data; boundary=---011000010111000001101001",
-            "x-rapidapi-key": API_KEY,
+            "x-rapidapi-key":
+              "5db5fe023cmsh90258ea5c33841cp19ee95jsnaff46b46a51d",
             "x-rapidapi-host": "shazam-core.p.rapidapi.com",
           },
           data: form,
